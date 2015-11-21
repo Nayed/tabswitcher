@@ -1,7 +1,7 @@
 <p>This is some content coming from our tab switcher component</p>
 
-{{tab-item}}
-{{tab-item}}
-{{tab-item}}
+{{#each tabItems as |tabItem|}}
+    {{tab-item item=tabItem}}
+{{/each}}
 
 {{!yield}}
