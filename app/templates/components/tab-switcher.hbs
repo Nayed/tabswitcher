@@ -1,9 +1,7 @@
 <p>This is some content coming from our tab switcher component</p>
 
 {{#each tabItems as |tabItem|}}
-    <div {{action "setSelectedTabItem" tabItem}}>
-        {{tab-item item=tabItem setSelectedTabItemAction="setSelectedTabItem"}}
-    </div>
+    {{tab-item item=tabItem setSelectedTabItemAction="setSelectedTabItem"}}
 {{/each}}
 
 <div class="item-content">
